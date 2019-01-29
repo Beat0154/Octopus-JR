@@ -1,0 +1,240 @@
+@font-face{
+    font-family: 'Dimbo';
+    src: url("../fonts/dimbo.ttf");
+}
+body{
+    overflow-x: hidden !important;
+}
+.header-wrapper{
+    min-width: 1400px;
+}
+.top-btns{
+	margin-top:10px;
+}
+.top-btns .row .col-lg-3 img{
+	width:100%;
+	height:170px;
+	height:13des0px;
+}
+.top-btns .row .col-lg-3 img:hover{
+	transform:translateY(-12px);
+	opacity:.6;
+}
+.playStore-button{
+	text-align:right;
+	margin-top:150px;
+	padding-right:46px;
+}
+.playStore-button img{
+	width:145px;
+}
+.playStore-button img:hover{
+	transform:translateY(-5px) !important;
+	opacity:.6;
+}
+.find-moreBtn{
+	position:absolute;
+	width:100%;
+	bottom:0;
+	text-align:center;
+    z-index: 1;
+}
+.second-page{
+	height:720px;
+    min-width: 1400px;
+    margin-top: 500px;
+}
+.second-playStore-button{
+	text-align:center;
+	position:relative;
+	bottom:-98%;
+}
+.second-playStore-button img{
+	width: 100px;
+}
+.second-playStore-button img:hover{
+	transform:translateY(-5px);
+	opacity:.6;
+}
+.download-text{
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	font-family: 'Dimbo';
+	text-shadow:0px 2px 4px black;
+	float:right;
+	display:none;
+/*	margin-bottom:10px;*/
+}
+.intro-text-heading{
+	font-size:50px;
+	color:#fff;
+    text-align: center;
+	text-shadow:0px 2px 10px black;
+	font-weight:bold;
+	font-family: 'Dimbo';
+/*	padding-left:20px;*/
+	float:left;
+	display:none;
+}
+.intro-text-heading p{
+	font-size:34px;
+}
+.social-icons{
+	padding-bottom:0px;
+}
+.social-icons img{
+	width:40px;
+	margin-right:5px;
+}
+.bg{
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    min-width: 1400px;
+}
+.bg_mbl{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bg2{
+    display: block;
+    width: 100%;
+    margin-top: -21rem;
+}
+.bg_mbl2{
+    display: none;
+    position:absolute;
+    top: 500px;
+}
+/* Responsive Design */
+@media screen and (max-width:767px) {
+    .bg{
+        display: none;
+    }
+    .bg_mbl{
+        display: block;
+        width: 767px;
+        min-width: 767px;
+        top: -80px;
+        left: -9999px;
+        right: -9999px;
+        margin: 0 auto;
+        min-height: 1028px;
+        max-height: 1028px;
+    }
+    .bg2{
+        display: none;
+    }
+    .bg_mbl2{
+        top: 335px;
+        display: block;
+        min-width: 840px;
+        width: 100%;
+        left: -9999px;
+        right: -9999px;
+        margin: 0 auto;
+        min-height: 718px;
+        max-height: 718px;
+        
+    }
+    .second-page{
+        position: relative;
+        margin-top: -770px;
+        min-width: 100%;
+        width: 100%;
+	}
+    .container-fluid{
+        display: block;
+        left: -9999px;
+        right: -9999px;
+        margin: 0 auto;
+    }
+	.second-playStore-button{
+		position:absolute;
+        z-index: 1;
+        left: -9999px;
+        right: -9999px;
+        bottom: -210px;
+	}
+	.second-playStore-button img{
+		width:100px;
+	}
+	.find-moreBtn{
+        margin:-9rem auto 0rem;
+        width: 100%;
+        top: 100%;
+        left: 0px;
+	}
+	.intro-text-heading, .download-text{
+		display:block;
+        float: none;
+	}
+    .intro-text-heading{
+        padding: 10px 0px 5px 0px;
+    }
+	.playStore-button{
+		margin-top:0px;
+        text-align: center;
+        padding-right: 0px;
+    }
+	.download-text{
+		text-align:center;
+		color:wite;
+	    margin-top:310px;
+	}
+	.desktop_buttons{
+		display: block;
+        margin: 5rem auto 0rem;
+        transform: translateX(-1.5rem)
+	}
+	.header-wrapper{
+        width: 100%;
+        background-position: center;
+        position: block;
+        margin: 0 auto;
+        height: 1152px;
+        min-width: 100%;
+	}
+	.social-icons img{
+	    width:40px;
+    }
+    .button{
+        max-width: 130px;
+        max-height: 80px;
+        min-width: 130px;
+        min-height: 80px;
+        margin: -6rem auto 0rem;
+    }
+    .second-playStore-button img:hover{
+	transform:none;
+	opacity:1;
+    }
+    .top-btns .row .col-lg-3 img:hover{
+        transform:none;
+        opacity:1;
+    }
+    .playStore-button img:hover{
+        transform:none;
+        opacity:1;
+    }
+    .button:hover{
+        transform: scale(0.7);
+    }
+}
+@media screen and (max-width:560px) {
+	.button{
+        max-width: 91px;
+        max-height: 56px;
+        min-width: 91px;
+        min-height: 56px;
+        align-content: left;
+        margin: -6rem auto 0rem;
+    }
+}
